@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemocracyNow</string>
+    <string name="votesBttn">Upcoming votes</string>
+    <string name="registrationBttn">Registration</string>
+    <string name="myInfoBttn">My info</string>
+    <string name="preferencesBttn">Preferences</string>
+</resources>
