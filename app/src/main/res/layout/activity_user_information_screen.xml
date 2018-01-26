@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.austin.democracynow.UserInformationScreen">
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/streetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/street"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/aptTextView"
+        app:layout_constraintBaseline_toBaselineOf="@id/streetEditText"/>
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/streetEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextSpace"
+        app:layout_constraintStart_toEndOf="@+id/streetTextView"
+        app:layout_constraintBottom_toTopOf="@id/aptTextView" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/aptTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/apt"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/aptEditText"
+        />
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/aptEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextSpace"
+        app:layout_constraintStart_toStartOf="@id/streetEditText"
+        app:layout_constraintBottom_toTopOf="@id/cityTextView" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/cityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/city"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/aptTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/cityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextSpace"
+        app:layout_constraintStart_toStartOf="@id/streetEditText"
+        app:layout_constraintTop_toBottomOf="@id/aptTextView" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/stateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/state"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/stateEditText"
+        app:layout_constraintTop_toBottomOf="@id/cityTextView"
+        />
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/stateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextSpace"
+        app:layout_constraintStart_toStartOf="@id/streetEditText"
+        app:layout_constraintTop_toBottomOf="@id/cityTextView" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/zipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/zip"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/zipEditText"
+        app:layout_constraintTop_toBottomOf="@id/stateTextView" />
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/zipEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextSpace"
+        app:layout_constraintStart_toStartOf="@id/streetEditText"
+        app:layout_constraintTop_toBottomOf="@id/stateTextView" />
+
+    <Button
+        android:id="@+id/submitBttn"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submitBttn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

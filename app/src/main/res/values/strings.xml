@@ -4,4 +4,11 @@
     <string name="registrationBttn">Registration</string>
     <string name="myInfoBttn">My info</string>
     <string name="preferencesBttn">Preferences</string>
+    <string name="street">Street Address:</string>
+    <string name="apt">Apt:</string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+    <string name="zip">Zip code:</string>
+    <string name="editTextSpace">\t\t\t\t\t\t\t\t\t\t\t</string>    <!-- So that the edit text still wraps content but has a starting width-->
+    <string name="submitBttn">Submit</string>
 </resources>

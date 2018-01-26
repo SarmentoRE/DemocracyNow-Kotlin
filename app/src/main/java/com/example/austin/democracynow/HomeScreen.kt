@@ -16,9 +16,7 @@ class HomeScreen : AppCompatActivity() {
         preferencesBttn.setOnClickListener { preferences() }
     }
 
-    private fun upcomingVotes(){
-
-    }
+    private fun upcomingVotes(){}
     private fun register() {}
     private fun myInfo() {}
     private fun preferences() {}
