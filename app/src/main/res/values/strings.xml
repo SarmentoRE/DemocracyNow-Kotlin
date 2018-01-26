@@ -11,4 +11,5 @@
     <string name="zip">Zip code:</string>
     <string name="editTextSpace">\t\t\t\t\t\t\t\t\t\t\t</string>    <!-- So that the edit text still wraps content but has a starting width-->
     <string name="submitBttn">Submit</string>
+    <string name="stateError">ERROR STATE IS A REQUIRED FIELD</string>
 </resources>

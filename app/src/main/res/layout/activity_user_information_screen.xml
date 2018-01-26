@@ -7,6 +7,15 @@
     tools:context="com.example.austin.democracynow.UserInformationScreen">
 
     <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stateError"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible"/>
+
+    <TextView
         android:padding="5dp"
         android:id="@+id/streetTextView"
         android:layout_width="wrap_content"
