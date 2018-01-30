@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_user_information_screen.*
+import org.jetbrains.anko.toast
 
 class UserInformationScreen : AppCompatActivity() {
 
@@ -18,11 +19,11 @@ class UserInformationScreen : AppCompatActivity() {
     private fun submitAddress(){
         val sharedPref = getSharedPreferences("userAddress",0)
         val editor = sharedPref.edit()
-        editor.putString("street",streetEditText.toString())
-        editor.putString("apt",aptEditText.toString())
-        editor.putString("city",cityEditText.toString())
-        editor.putString("state",stateEditText.toString())
-        editor.putString("zip",zipEditText.toString())
+        editor.putString("street",streetEditText.text.toString())
+        editor.putString("apt",aptEditText.text.toString())
+        editor.putString("city",cityEditText.text.toString())
+        editor.putString("state",stateEditText.text.toString())
+        editor.putString("zip",zipEditText.text.toString())
         editor.commit()
         val user = User(streetAddress = sharedPref.getString("street",null),streetAddress2 = sharedPref.getString("apt",null),city = sharedPref.getString("city",null),state = sharedPref.getString("state",null),zip = sharedPref.getString("zip",null))
 
