@@ -23,12 +23,10 @@ class UpcomingVotes : AppCompatActivity() {
         var address = sharedPref.getString("street", "") + sharedPref.getString("apt", "")+ sharedPref.getString("city", "")+ sharedPref.getString("state", "")+ sharedPref.getString("zip", "")
         address = address.replace("\\s+", "_")
         val call = "https://www.googleapis.com/civicinfo/v2/voterinfo?address=" + address + "&returnAllAvailableData=true&key=" + getString(R.string.google_voter_api_key)
-        Log.wtf("CALL",call)
         doAsync {
             val result = URL(call).readText()
             uiThread {
                 votes.text = result
-                toast(call)
             }
         }
     }
